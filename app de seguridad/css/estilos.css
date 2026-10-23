@@ -1,0 +1,523 @@
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+   ===================================================== */
+
+* {
+    box-sizing: border-box;       /* Incluye padding y borde dentro del tamaño */
+    margin: 0;                    /* Elimina márgenes predeterminados */
+    padding: 0;                   /* Elimina espacios predeterminados */
+}
+
+
+/* =====================================================
+   CUERPO DE LA APLICACIÓN
+   ===================================================== */
+
+body {
+    font-family: Arial, sans-serif;   /* Tipo de letra */
+    background: #f4f7fb;              /* Color de fondo */
+    color: #17233c;                   /* Color general del texto */
+}
+
+
+/* =====================================================
+   ENCABEZADO
+   ===================================================== */
+
+.encabezado {
+    background: white;                /* Fondo blanco */
+    
+    display: flex;                    /* Coloca los elementos en fila */
+    
+    align-items: center;              /* Centra verticalmente */
+    
+    gap: 15px;                        /* Separación entre elementos */
+    
+    padding: 20px;                    /* Espacio interno */
+    
+    border-bottom: 1px solid #dddddd; /* Línea inferior */
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.logo {
+    font-size: 50px;                  /* Tamaño del escudo */
+}
+
+
+/* =====================================================
+   TÍTULO PRINCIPAL
+   ===================================================== */
+
+.encabezado h1 {
+    color: #0d3b66;                   /* Color azul */
+    
+    font-size: 28px;                  /* Tamaño del título */
+}
+
+
+/* =====================================================
+   SUBTÍTULO
+   ===================================================== */
+
+.encabezado p {
+    color: #667085;                   /* Color gris */
+    
+    margin-top: 5px;                  /* Separación del título */
+}
+
+
+/* =====================================================
+   CONTENIDO PRINCIPAL
+   ===================================================== */
+
+main {
+    max-width: 900px;                 /* Ancho máximo */
+    
+    margin: auto;                     /* Centra el contenido */
+    
+    padding: 30px;                    /* Espacio interno */
+}
+/* =====================================================
+   TARJETA DE ESTADO DE SEGURIDAD
+   ===================================================== */
+
+.estado {
+    background: #ffffff;                         /* Fondo blanco */
+    
+    border-radius: 15px;                         /* Redondea las esquinas */
+    
+    padding: 20px;                               /* Espacio interno */
+    
+    margin-top: 25px;                            /* Separa la tarjeta de lo anterior */
+    
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Crea una sombra suave */
+}
+
+
+/* =====================================================
+   TÍTULO DEL ESTADO
+   ===================================================== */
+
+.estado h2 {
+    color: #0d3b66;                              /* Color azul del título */
+    
+    margin-bottom: 15px;                         /* Espacio debajo del título */
+}
+
+
+/* =====================================================
+   RESULTADO DEL ESTADO
+   ===================================================== */
+
+.estado-resultado {
+    display: flex;                               /* Coloca los elementos en fila */
+    
+    align-items: center;                         /* Los centra verticalmente */
+    
+    gap: 10px;                                   /* Separación entre indicador y texto */
+    
+    font-size: 22px;                             /* Aumenta el tamaño del texto */
+}
+
+
+/* =====================================================
+   INDICADOR VERDE
+   ===================================================== */
+
+.indicador {
+    font-size: 25px;                             /* Tamaño del círculo verde */
+}
+
+
+/* =====================================================
+   MENSAJE DEL ESTADO
+   ===================================================== */
+
+.estado p {
+    margin-top: 10px;                            /* Separa el mensaje del resultado */
+    
+    color: #667085;                              /* Color gris del mensaje */
+}
+/* =====================================================
+   MÓDULO DE CONTRASEÑAS
+   ===================================================== */
+
+.modulo {
+    background: #ffffff;                         /* Fondo blanco */
+
+    border-radius: 15px;                         /* Esquinas redondeadas */
+
+    padding: 20px;                               /* Espacio interno */
+
+    margin-top: 25px;                            /* Separación de la tarjeta anterior */
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Sombra suave */
+}
+
+
+/* =====================================================
+   TÍTULO DEL MÓDULO
+   ===================================================== */
+
+.modulo h2 {
+    color: #0d3b66;                              /* Color azul */
+
+    margin-bottom: 10px;                         /* Separación inferior */
+}
+
+
+/* =====================================================
+   CAMPO DE CONTRASEÑA
+   ===================================================== */
+
+.modulo input {
+    width: 100%;                                 /* Ocupa todo el ancho disponible */
+
+    padding: 12px;                               /* Espacio dentro del campo */
+
+    margin-top: 15px;                            /* Separación superior */
+
+    border: 1px solid #cccccc;                   /* Borde gris */
+
+    border-radius: 8px;                          /* Esquinas redondeadas */
+
+    font-size: 16px;                             /* Tamaño del texto */
+}
+
+
+/* =====================================================
+   BOTÓN
+   ===================================================== */
+
+.modulo button {
+    margin-top: 12px;                            /* Separación del campo */
+
+    padding: 12px 18px;                          /* Espacio interno */
+
+    border: none;                                /* Elimina el borde */
+
+    border-radius: 8px;                          /* Redondea las esquinas */
+
+    background: #0d3b66;                         /* Fondo azul */
+
+    color: white;                                /* Texto blanco */
+
+    cursor: pointer;                             /* Cambia el cursor al pasar */
+}
+
+
+/* =====================================================
+   RESULTADO
+   ===================================================== */
+
+#resultado-password {
+    margin-top: 15px;                            /* Separa el resultado */
+
+    font-weight: bold;                           /* Texto en negrita */
+}
+/* =====================================================
+   MÓDULO DE CONTRASEÑAS
+   ===================================================== */
+
+.modulo {
+    background: #ffffff;                         /* Fondo blanco */
+
+    border-radius: 15px;                         /* Esquinas redondeadas */
+
+    padding: 20px;                               /* Espacio interno */
+
+    margin-top: 25px;                            /* Separación de la tarjeta anterior */
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Sombra suave */
+}
+
+
+/* =====================================================
+   TÍTULO DEL MÓDULO
+   ===================================================== */
+
+.modulo h2 {
+    color: #0d3b66;                              /* Color azul */
+
+    margin-bottom: 10px;                         /* Separación inferior */
+}
+
+
+/* =====================================================
+   CAMPO DE CONTRASEÑA
+   ===================================================== */
+
+.modulo input {
+    width: 100%;                                 /* Ocupa todo el ancho disponible */
+
+    padding: 12px;                               /* Espacio dentro del campo */
+
+    margin-top: 15px;                            /* Separación superior */
+
+    border: 1px solid #cccccc;                   /* Borde gris */
+
+    border-radius: 8px;                          /* Esquinas redondeadas */
+
+    font-size: 16px;                             /* Tamaño del texto */
+}
+
+
+/* =====================================================
+   BOTÓN
+   ===================================================== */
+
+.modulo button {
+    margin-top: 12px;                            /* Separación del campo */
+
+    padding: 12px 18px;                          /* Espacio interno */
+
+    border: none;                                /* Elimina el borde */
+
+    border-radius: 8px;                          /* Redondea las esquinas */
+
+    background: #0d3b66;                         /* Fondo azul */
+
+    color: white;                                /* Texto blanco */
+
+    cursor: pointer;                             /* Cambia el cursor al pasar */
+}
+
+
+/* =====================================================
+   RESULTADO
+   ===================================================== */
+
+#resultado-password {
+    margin-top: 15px;                            /* Separa el resultado */
+
+    font-weight: bold;                           /* Texto en negrita */
+}
+/* =====================================================
+   TARJETAS DE LOS MÓDULOS
+   ===================================================== */
+
+.modulo {
+    background: #ffffff;                         /* Fondo blanco de la tarjeta */
+    border-radius: 15px;                          /* Redondea las esquinas */
+    padding: 25px;                                /* Espacio interno de la tarjeta */
+    margin-top: 25px;                             /* Separación entre tarjetas */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);   /* Sombra suave */
+}
+
+
+/* =====================================================
+   TÍTULOS DE LOS MÓDULOS
+   ===================================================== */
+
+.modulo h2 {
+    color: #0d3b66;                               /* Color azul del título */
+    margin-bottom: 10px;                          /* Espacio debajo del título */
+}
+
+
+/* =====================================================
+   CAMPOS DE TEXTO
+   ===================================================== */
+
+.modulo input {
+    width: 100%;                                  /* Ocupa todo el ancho disponible */
+    padding: 12px;                                /* Espacio dentro del campo */
+    margin-top: 8px;                              /* Separación superior */
+    margin-bottom: 15px;                          /* Separación inferior */
+    border: 1px solid #cccccc;                    /* Borde gris */
+    border-radius: 8px;                           /* Esquinas redondeadas */
+    font-size: 16px;                              /* Tamaño de la letra */
+}
+
+
+/* =====================================================
+   BOTONES
+   ===================================================== */
+
+.modulo button {
+    background: #0d3b66;                          /* Fondo azul */
+    color: white;                                 /* Texto blanco */
+    border: none;                                 /* Elimina el borde */
+    padding: 12px 20px;                           /* Espacio interno */
+    border-radius: 8px;                           /* Redondea el botón */
+    cursor: pointer;                              /* Cambia el cursor al pasar encima */
+    font-size: 16px;                              /* Tamaño del texto */
+}
+
+
+/* =====================================================
+   RESULTADOS
+   ===================================================== */
+
+.modulo p {
+    margin-top: 10px;                             /* Separación del resultado */
+}
+/* =====================================================
+   MÓDULO DE HASH
+   ===================================================== */
+
+#resultado-hash {
+    word-break: break-all;                 /* Permite dividir el hash si es muy largo */
+    font-family: monospace;                /* Utiliza una letra adecuada para códigos */
+    margin-top: 15px;                      /* Separa el resultado del botón */
+    padding: 12px;                         /* Espacio interno */
+    background: #f4f7fb;                   /* Fondo ligeramente gris */
+    border-radius: 8px;                    /* Esquinas redondeadas */
+}
+/* =====================================================
+   CAMPOS DEL MÓDULO HASH
+   ===================================================== */
+
+#texto-hash {
+    width: 100%;                         /* Ocupa todo el ancho disponible */
+    padding: 12px;                       /* Agrega espacio dentro del campo */
+    border: 1px solid #cccccc;           /* Crea un borde gris */
+    border-radius: 8px;                  /* Redondea las esquinas */
+    font-size: 16px;                     /* Tamaño de la letra */
+    margin-top: 8px;                     /* Separa el campo del texto anterior */
+}
+
+
+/* =====================================================
+   BOTÓN DEL MÓDULO HASH
+   ===================================================== */
+
+#btn-hash {
+    margin-top: 12px;                    /* Separa el botón del campo */
+    padding: 12px 18px;                  /* Espacio interno del botón */
+    background: #0d3b66;                 /* Color azul del botón */
+    color: white;                        /* Color blanco del texto */
+    border: none;                        /* Elimina el borde */
+    border-radius: 8px;                  /* Redondea las esquinas */
+    font-size: 16px;                     /* Tamaño del texto */
+    cursor: pointer;                     /* Cambia el cursor al pasar por encima */
+}
+
+
+/* =====================================================
+   EFECTO AL PASAR EL MOUSE
+   ===================================================== */
+
+#btn-hash:hover {
+    background: #14558d;                 /* Cambia ligeramente el azul */
+}
+/* ===================================================== */
+/* MÓDULO DE RED */
+/* ===================================================== */
+
+#btn-red {                                      /* Selecciona el botón de Red */
+    margin-top: 12px;                           /* Separa el botón del texto */
+    padding: 12px 18px;                         /* Agrega espacio dentro del botón */
+    background: #0d3b66;                        /* Color azul del botón */
+    color: white;                               /* Color blanco del texto */
+    border: none;                               /* Elimina el borde */
+    border-radius: 8px;                         /* Redondea las esquinas */
+    font-size: 16px;                            /* Tamaño del texto */
+    cursor: pointer;                            /* Cambia el cursor al pasar encima */
+}
+
+#btn-red:hover {                                /* Efecto cuando pasamos el mouse */
+    background: #14558d;                        /* Cambia ligeramente el azul */
+}
+
+#resultado-red {                                /* Selecciona el resultado de la prueba */
+    margin-top: 15px;                           /* Separa el resultado del botón */
+    padding: 12px;                              /* Agrega espacio interno */
+    background: #f4f7fb;                        /* Fondo ligeramente gris */
+    border-radius: 8px;                         /* Redondea las esquinas */
+    font-weight: bold;                          /* Hace el resultado más visible */
+}
+/* ===================================================== */ /* Separador */
+/* MÓDULO DE PHISHING */ /* Nombre del módulo */
+/* ===================================================== */ /* Separador */
+
+#texto-phishing { /* Selecciona el campo donde escribimos la URL */
+    padding: 12px; /* Agrega espacio dentro del campo */
+    border: 1px solid #cccccc; /* Crea un borde gris */
+    border-radius: 8px; /* Redondea las esquinas */
+    font-size: 16px; /* Define el tamaño de la letra */
+    margin-top: 8px; /* Separa el campo de la etiqueta */
+    width: 100%; /* Hace que el campo ocupe todo el ancho */
+}
+
+#btn-phishing { /* Selecciona el botón Analizar URL */
+    margin-top: 12px; /* Separa el botón del campo */
+    padding: 12px 18px; /* Agrega espacio dentro del botón */
+    background: #0d3b66; /* Color azul del botón */
+    color: white; /* Color blanco del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 8px; /* Redondea las esquinas */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar encima */
+}
+
+#btn-phishing:hover { /* Aplica un efecto al pasar el mouse */
+    background: #14558d; /* Cambia ligeramente el azul */
+}
+
+#resultado-phishing { /* Selecciona el lugar donde aparecerá el resultado */
+    margin-top: 15px; /* Separa el resultado del botón */
+    padding: 12px; /* Agrega espacio interno */
+    background: #f4f7fb; /* Fondo gris claro */
+    border-radius: 8px; /* Redondea las esquinas */
+    font-weight: bold; /* Hace visible el resultado */
+}
+/* ===================================================== */
+/* MÓDULO DE EDUCACIÓN */
+/* ===================================================== */
+
+.lista-educacion {                         /* Selecciona la lista de temas */
+    list-style: none;                      /* Quita los puntos de la lista */
+    padding: 0;                            /* Quita espacio interno */
+    margin-top: 15px;                      /* Separa la lista del texto anterior */
+}
+
+.lista-educacion li {                      /* Selecciona cada tema de la lista */
+    background: #f4f7fb;                   /* Fondo gris claro */
+    padding: 12px;                          /* Espacio interno */
+    margin-top: 8px;                        /* Separa cada tema */
+    border-radius: 8px;                     /* Redondea las esquinas */
+    font-size: 16px;                        /* Tamaño del texto */
+}
+/* ===================================================== */ /* Separador */
+ /* MÓDULO DE EVALUACIÓN */ /* Nombre del módulo */
+ /* ===================================================== */ /* Separador */
+
+#btn-opcion1 { /* Selecciona el botón de la respuesta correcta */
+    margin-top: 12px; /* Separa el botón de la pregunta */
+    padding: 12px 18px; /* Agrega espacio dentro del botón */
+    background: #0d3b66; /* Color azul del botón */
+    color: white; /* Color blanco del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 8px; /* Redondea las esquinas */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar encima */
+}
+
+#btn-opcion2 { /* Selecciona el botón de la respuesta incorrecta */
+    margin-top: 12px; /* Separa el botón anterior */
+    margin-left: 8px; /* Separa los dos botones */
+    padding: 12px 18px; /* Agrega espacio dentro del botón */
+    background: #0d3b66; /* Color azul del botón */
+    color: white; /* Color blanco del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 8px; /* Redondea las esquinas */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar encima */
+}
+
+#btn-opcion1:hover, #btn-opcion2:hover { /* Aplica efecto a los dos botones */
+    background: #14558d; /* Cambia ligeramente el azul */
+}
+
+#resultado-evaluacion { /* Selecciona el lugar del resultado */
+    margin-top: 15px; /* Separa el resultado de los botones */
+    padding: 12px; /* Agrega espacio interno */
+    background: #f4f7fb; /* Fondo gris claro */
+    border-radius: 8px; /* Redondea las esquinas */
+    font-weight: bold; /* Hace visible el resultado */
+}

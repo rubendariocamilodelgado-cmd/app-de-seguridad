@@ -1,0 +1,450 @@
+   <!DOCTYPE html> <!-- Indica que usamos HTML5 -->
+
+<html lang="es"> <!-- Inicia el documento y establece español -->
+
+<head> <!-- Inicia la configuración de la página -->
+
+    <meta charset="UTF-8"> <!-- Permite tildes, ñ y símbolos -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la página a diferentes pantallas -->
+
+    <title>InfoSec Guardian</title> <!-- Título que aparece en la pestaña -->
+
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Conecta el archivo CSS -->
+
+</head> <!-- Termina la configuración -->
+
+
+
+<body> <!-- Comienza el contenido visible -->
+
+    <header class="encabezado"> <!-- Crea el encabezado -->
+
+        <div class="logo">🛡️</div> <!-- Muestra el escudo -->
+
+        <div> <!-- Agrupa título y subtítulo -->
+
+            <h1>InfoSec Guardian</h1> <!-- Nombre de la aplicación -->
+
+            <p>Seguridad de la Información</p> <!-- Subtítulo -->
+
+        </div>
+
+    </header> <!-- Termina el encabezado -->
+
+    <main> <!-- Comienza el contenido principal -->
+
+        <h2>Hola 👋</h2> <!-- Saludo -->
+
+        <p>Tu seguridad es importante</p> <!-- Mensaje -->
+
+
+
+
+    
+
+    
+
+
+    
+
+        
+    
+
+    
+
+
+    <section class="estado">                     <!-- Crea la tarjeta del estado -->
+
+        <h2>Estado general de seguridad</h2>      <!-- Título de la tarjeta -->
+
+        <div class="estado-resultado">           <!-- Agrupa el indicador y el estado -->
+
+            <span class="indicador">🟢</span>     <!-- Muestra el indicador verde -->
+
+            <strong>BUENO</strong>               <!-- Muestra el estado -->
+
+        </div>
+
+        <p>Sigue aplicando buenas prácticas</p>  <!-- Mensaje de seguridad -->
+
+    </section>
+
+
+
+ 
+
+                
+<section class="modulo"> <!-- Crea el módulo de cifrado -->
+
+    <h2>🔐 Cifrado</h2> <!-- Título del módulo -->
+
+    <p>Aprende a cifrar y descifrar información.</p> <!-- Descripción del módulo -->
+
+    <label for="texto-cifrado">Texto:</label> <!-- Etiqueta del texto -->
+
+    <input type="text" id="texto-cifrado" placeholder="Escribe un texto"> <!-- Campo para escribir el texto -->
+
+    <label for="clave-cifrado">Clave:</label> <!-- Etiqueta de la clave -->
+
+    <input type="text" id="clave-cifrado" placeholder="Escribe una clave"> <!-- Campo para escribir la clave -->
+
+    <button id="btn-cifrar">Cifrar texto</button> <!-- Botón para cifrar -->
+
+    <p id="resultado-cifrado"></p> <!-- Aquí aparecerá el resultado -->
+
+</section> <!-- Termina el módulo de cifrado -->
+
+
+<section class="modulo"> <!-- Crea el módulo de contraseñas -->
+
+    <h2>🔑 Contraseñas</h2> <!-- Título del módulo -->    <!-- Crea la tarjeta del módulo -->
+
+    
+
+    <p>Comprueba la seguridad de una contraseña.</p> <!-- Explica la función -->
+
+                        
+                    
+        <input type="password" id="password" placeholder="Escribe una contraseña"> <!-- Campo para escribir la contraseña -->
+
+
+    <button id="btn-analizar">Analizar contraseña</button> <!-- Botón para analizar -->
+
+    <p id="resultado-password"></p>              <!-- Aquí aparecerá el resultado -->
+
+</section
+<section class="modulo"> <!-- Crea el módulo de Hash -->
+
+    <h2>🔎 Hash</h2> <!-- Título del módulo -->
+
+    <p>Genera una huella digital de la información.</p> <!-- Explica la función -->
+
+    <label for="texto-hash">Texto:</label> <!-- Etiqueta del campo -->
+
+    <input type="text" id="texto-hash" placeholder="Escribe un texto"> <!-- Campo para escribir el texto -->
+
+    <button id="btn-hash">Generar SHA-256</button> <!-- Botón para generar el hash -->
+
+    <p id="resultado-hash"></p> <!-- Aquí aparecerá el resultado -->
+
+</section> <!-- Termina el módulo de Hash -->
+<!-- ===================================================== -->
+<!-- MÓDULO DE RED -->
+<!-- ===================================================== -->
+
+<section class="modulo"> <!-- Crea el módulo de diagnóstico de red -->
+
+    <h2>🌐 Red</h2> <!-- Título del módulo -->
+
+    <p>Realiza una comprobación básica de conexión.</p> <!-- Explica la función -->
+
+    <button id="btn-red">Comprobar conexión</button> <!-- Botón para iniciar la prueba -->
+
+    <p id="resultado-red"></p> <!-- Aquí aparecerá el resultado -->
+
+</section> <!-- Termina el módulo de Red -->
+<!-- ===================================================== --> <!-- Separador -->
+<!-- MÓDULO DE PHISHING --> <!-- Nombre del módulo -->
+<!-- ===================================================== --> <!-- Separador -->
+
+<section class="modulo"> <!-- Crea el módulo de Phishing -->
+
+    <h2>🎣 Phishing</h2> <!-- Título del módulo -->
+
+    <p>Analiza una dirección web para detectar señales sospechosas.</p> <!-- Explica la función -->
+
+    <label for="texto-phishing">URL:</label> <!-- Etiqueta del campo -->
+
+    <input type="text" id="texto-phishing" placeholder="Escribe una URL"> <!-- Campo para escribir la URL -->
+
+    <button id="btn-phishing">Analizar URL</button> <!-- Botón para iniciar el análisis -->
+
+    <p id="resultado-phishing"></p> <!-- Aquí aparecerá el resultado -->
+
+</section> <!-- Termina el módulo de Phishing -->
+<!-- ========================================== -->
+<!-- MÓDULO DE EVALUACIÓN -->
+<!-- ========================================== -->
+
+<section class="modulo">
+    <!-- ==========================================
+     PANEL AVANZADO DE SEGURIDAD
+     ========================================== -->
+
+<section class="modulo">
+
+    <h2>🛡️ Panel avanzado de seguridad</h2>
+
+    <p>
+        Selecciona el estado de cada parámetro para realizar
+        una evaluación general de seguridad.
+    </p>
+
+    <label>🛡️ Autenticación multifactor (MFA)</label>
+    <select id="seguridad-mfa">
+        <option value="1">Habilitado</option>
+        <option value="0">No habilitado</option>
+    </select>
+
+    <label>👤 Control de acceso</label>
+    <select id="seguridad-acceso">
+        <option value="1">Configurado</option>
+        <option value="0">No configurado</option>
+    </select>
+
+    <label>💾 Copias de seguridad</label>
+    <select id="seguridad-backup">
+        <option value="1">Realizadas</option>
+        <option value="0">No realizadas</option>
+    </select>
+
+    <label>🔄 Actualizaciones</label>
+    <select id="seguridad-actualizaciones">
+        <option value="1">Actualizado</option>
+        <option value="0">Desactualizado</option>
+    </select>
+
+    <label>🔥 Firewall</label>
+    <select id="seguridad-firewall">
+        <option value="1">Activo</option>
+        <option value="0">Inactivo</option>
+    </select>
+
+    <label>📡 Seguridad Wi-Fi</label>
+    <select id="seguridad-wifi">
+        <option value="1">WPA2/WPA3</option>
+        <option value="0">Red abierta o insegura</option>
+    </select>
+
+    <label>🔐 Cifrado</label>
+    <select id="seguridad-cifrado">
+        <option value="1">Cifrado activo</option>
+        <option value="0">Sin cifrado</option>
+    </select>
+
+    <label>⏱️ Tiempo de sesión</label>
+    <select id="seguridad-sesion">
+        <option value="1">Cierre automático activo</option>
+        <option value="0">Sin cierre automático</option>
+    </select>
+
+    <label>📋 Registro de eventos</label>
+    <label>🔑 Complejidad de contraseña</label>
+    <select id="seguridad-logs">
+    <option value="1">Activo</option>
+    <option value="0">Inactivo</option>
+</select>
+<select id="seguridad-complejidad">
+    <option value="1">Complejidad adecuada</option>
+    <option value="0">Complejidad insuficiente</option>
+</select>
+
+<label>📏 Longitud de contraseña</label>
+<select id="seguridad-longitud">
+    <option value="1">Mínimo recomendado</option>
+    <option value="0">Longitud insuficiente</option>
+</select>
+
+<label>🌐 Seguridad HTTPS</label>
+<select id="seguridad-https">
+    <option value="1">HTTPS activo</option>
+    <option value="0">HTTP sin cifrado</option>
+</select>
+
+<label>🎣 Detección de phishing</label>
+<select id="seguridad-phishing">
+    <option value="1">Protección activa</option>
+    <option value="0">Protección inactiva</option>
+</select>
+
+<label>🦠 Protección contra malware</label>
+<select id="seguridad-malware">
+    <option value="1">Protección activa</option>
+    <option value="0">Protección inactiva</option>
+</select>
+
+<label>🚨 Nivel de riesgo</label>
+<select id="seguridad-riesgo">
+    <option value="1">Riesgo controlado</option>
+    <option value="0">Riesgo elevado</option>
+</select>
+
+
+    <br><br>
+
+    <button id="btn-evaluar-seguridad">
+        🔍 Evaluar seguridad
+    </button>
+
+    <div id="resultado-seguridad" class="resultado">
+        Aquí aparecerá el resultado.
+    </div>
+
+</section>
+
+    <h2>📝 Evaluación</h2>
+
+    <p>Comprueba tus conocimientos de seguridad de la información.</p>
+
+    <p>¿Cuál de estos elementos ayuda a proteger una cuenta?</p>
+
+    <button id="btn-opcion1">🔑 Una contraseña segura</button>
+
+    <button id="btn-opcion2">📢 Compartir la contraseña</button>
+
+    <p id="resultado-evaluacion"></p>
+
+</section>
+<!-- =========================================
+     LABORATORIO DE CRIPTOGRAFÍA
+     Módulo adicional - no elimina contenido
+     ========================================= -->
+
+<section class="modulo" id="laboratorio-criptografia">
+
+    <h2>🔐 Laboratorio de criptografía</h2>
+
+    <p>
+        Experimenta con diferentes métodos de cifrado y observa
+        cómo se transforma un mensaje.
+    </p>
+
+    <label for="crypto-texto">📝 Texto:</label>
+    <textarea
+        id="crypto-texto"
+        rows="4"
+        placeholder="Escribe aquí el mensaje..."
+    ></textarea>
+
+    <label for="crypto-algoritmo">🔐 Algoritmo:</label>
+
+    <select id="crypto-algoritmo">
+
+        <option value="cesar">César</option>
+
+        <option value="vigenere">Vigenère</option>
+
+        <option value="xor">XOR</option>
+
+        <option value="aes">AES-256-GCM</option>
+
+        <option value="rsa">RSA-OAEP</option>
+
+    </select>
+
+    <label for="crypto-clave">🔑 Clave:</label>
+
+    <input
+        type="text"
+        id="crypto-clave"
+        placeholder="Escribe una clave"
+    >
+
+    <div class="botones-crypto">
+
+        <button id="btn-cifrar">
+            🔒 Cifrar
+        </button>
+
+        <button id="btn-descifrar">
+            🔓 Descifrar
+        </button>
+
+        <button id="btn-limpiar-crypto">
+            🗑️ Limpiar
+        </button>
+
+    </div>
+
+    <h3>📤 Resultado</h3>
+
+    <textarea
+        id="crypto-resultado"
+        rows="5"
+        readonly
+        placeholder="Aquí aparecerá el resultado..."
+    ></textarea>
+
+    <div id="crypto-explicacion" class="resultado">
+        Selecciona un algoritmo para conocer su funcionamiento.
+    </div>
+<!-- ALGORITMOS ADICIONALES DE CRIPTOGRAFÍA -->
+<div class="crypto-extra">
+
+    <h3>🔐 Algoritmos adicionales</h3>
+
+    <label for="extra-crypto-algoritmo">
+        Selecciona el algoritmo:
+    </label>
+
+    <select id="extra-crypto-algoritmo">
+        <option value="cesar">César</option>
+        <option value="atbash">Atbash</option>
+        <option value="vigenere">Vigenère</option>
+        <option value="xor">XOR</option>
+        <option value="base64">Base64</option>
+        <option value="aes">AES-GCM</option>
+        <option value="sha256">SHA-256 (Hash)</option>
+    </select>
+
+    <label for="extra-crypto-texto">
+        Texto:
+    </label>
+
+    <textarea
+        id="extra-crypto-texto"
+        rows="4"
+        placeholder="Escribe el texto que deseas procesar..."
+    ></textarea>
+
+    <label for="extra-crypto-clave">
+        Clave:
+    </label>
+
+    <input
+        type="text"
+        id="extra-crypto-clave"
+        placeholder="Clave o desplazamiento"
+    >
+
+    <div class="botones-crypto-extra">
+
+        <button id="btn-extra-cifrar">
+            🔒 Cifrar / Procesar
+        </button>
+
+        <button id="btn-extra-descifrar">
+            🔓 Descifrar
+        </button>
+
+        <button id="btn-extra-limpiar">
+            🗑️ Limpiar
+        </button>
+
+    </div>
+
+    <h3>📋 Resultado</h3>
+
+    <textarea
+        id="extra-crypto-resultado"
+        rows="6"
+        readonly
+        placeholder="Aquí aparecerá el resultado..."
+    ></textarea>
+
+    <div
+        id="extra-crypto-explicacion"
+        class="resultado"
+    >
+        Selecciona un algoritmo para conocer su funcionamiento.
+    </div>
+
+</div>
+</section>
+</main> <!-- Termina el contenido principal -->
+       <script src="js/app.js"></script> <!-- Conecta JavaScript con nuestra página -->
+
+</body> <!-- Termina el contenido visible -->
+
+</html> <!-- Termina el documento -->
